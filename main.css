@@ -1,26 +1,257 @@
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: 600;
+}
+
 body{
     margin: 0;
     background-color: #FFFC00;
+    font-family: "Inter", "Halvetica";
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
 }
 
 header {
+    background-color: #FFFC00;
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    padding-top: 4px;
+    top: 0;
 }
 
+/* Header Left */
+.header-left {
+    padding-top: 24px;
+    width: 256px;
+    height: 48px;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    margin-left: 16px;
+}
+
+.header-left input {
+    height: 40px;
+    max-height: 48px;
+    border-radius: 20px;
+    border: 2px solid;
+    background-color: #FFFC00;
+    padding: 0px 12px 0 40px;
+}
 
 #logo {
     width:48px;
 }
 
 .search-icon {
-    width: 36px;
+    font-size: 18px;
+    position: absolute;
+    top: 31px;
+    left: 88px;
+}
+
+
+
+/* Header Center */
+.header-center {
+    display: flex;
+    gap: 8px;
+    margin-top: 8px;
+}
+/* 
+.header-center div {
+    background-color: #FFFC00;
+}  */
+
+.nav-element {
+    height: 64px;
+    width: 60px;
+
+}
+
+.nav-element a{
+    background-color: rgb(93, 135, 24);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 8px;
+    border-radius: 8px;
+    text-decoration: none;
+    height: 100%;
+    width: 100%;
+    color: #000;
+    overflow: hidden;
+}
+
+.nav-element a :hover {
+    background-color: aqua;
+}
+.nav-element h5 {
+    text-align: center;
+    text-decoration: none;
+    line-height: 0%;
+    position: absolute;
+    top: 40px;
+}
+
+.nav-element svg {
+    padding-top: 12px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    background-color: blue;
+}
+/* .nav-icon {
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding-top: 12px;
+} */
+
+/* Header Right */
+.header-right {
+    width: 256px;
+    height: 48px;
+    align-self: center;
+    display: flex;
+    gap: 12px;
+    margin-right: 16px;
 }
 
 .icon-btn {
-    width: 32px;
+    width: 48px;
+    height: 48px;
+    padding: 12px;
+    background-color: white;
+    border-radius: 50%;
 }
 
-.nav-icon {
-    width: 24px;
+.primary-btn {
+    color: white;
+    background: #000;
+    height: 40px;
+    padding: 0 12px;
+    border: none;
+    border-radius: 50px;
+}
+
+main {
+    padding-top: 128px;
+    display: flex;
+    margin: 0px 120px;
+}
+
+.section-left {
+    width: 50%;
+    padding-bottom: 80px;
+}
+
+.section-left p {
+    font-size: 24px;
+}
+
+.tag {
+    float: left;
+    font-size: x-small;
+    margin: 4px 6px 0 0;
+    color: white;
+    border-radius: 4px;
+    background-color: rgb(108, 108, 239);
+    padding: 4px;
+}
+
+.primary-btn-icon {
+    background-color: #000;
+    display: flex;
+    width: fit-content;
+    height: 24px;
+    align-items: center;
+    color: white;
+    padding: 24px 40px;
+    border-radius: 24px;
+}
+
+.primary-btn-icon svg {
+    height: 20px;
+    fill: white;
+}
+
+.primary-btn-icon h4 {
+    padding-left: 12px;
+    font-weight: 500;
+}
+
+.section-right {
+    width: 50%;
+}
+
+.section-right img {
+    width: 45vw;
+}
+
+.banner {
+    position: fixed;
+    bottom: 0;
+    height: 64px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    color: white;
+}
+
+.banner h5 {
+    margin: 0 8px;
+}
+
+.banner span {
+    color: #FFFC00;
+}
+
+.banner span a {
+    text-decoration: none;
+    color: #FFFC00;
+}
+
+.banner svg {
+    height: 16px;
+    fill: #FFFC00;
+}
+
+.footer-section {
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+}
+
+.footer-section div p {
+    font-size: small;
+    line-height: 10px;
+}
+
+.footer-bottom-bar {
+    background-color: #121314;
+    color: white;
+    padding-bottom: 64px;
+    display: flex;
+    justify-content: left;
+}
+
+.footer-bottom-bar a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    padding: 16px 0px 16px 48px;
 }
