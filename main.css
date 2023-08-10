@@ -3,14 +3,14 @@
 }
 
 h1 {
-    font-size: 48px;
+    font-size: 56px;
     font-weight: 600;
 }
 
 body{
     margin: 0;
     background-color: #FFFC00;
-    font-family: "Inter", "Halvetica";
+    font-family: 'Nunito Sans', sans-serif;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -40,23 +40,25 @@ header {
 }
 
 .header-left input {
-    height: 40px;
+    height: 36px;
     max-height: 48px;
     border-radius: 20px;
-    border: 2px solid;
+    border: 1px solid;
     background-color: #FFFC00;
+    text-decoration: grey;
     padding: 0px 12px 0 40px;
 }
 
 #logo {
-    width:48px;
+    padding-top: 4px;
+    width:36px;
 }
 
 .search-icon {
     font-size: 18px;
     position: absolute;
     top: 31px;
-    left: 88px;
+    left: 76px;
 }
 
 
@@ -64,60 +66,51 @@ header {
 /* Header Center */
 .header-center {
     display: flex;
-    gap: 8px;
-    margin-top: 8px;
-}
-/* 
-.header-center div {
-    background-color: #FFFC00;
-}  */
-
-.nav-element {
-    height: 64px;
-    width: 60px;
-
+    gap: 4px;
 }
 
-.nav-element a{
-    background-color: rgb(93, 135, 24);
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    margin: 0 8px;
-    border-radius: 8px;
+.header-center a {
     text-decoration: none;
-    height: 100%;
-    width: 100%;
     color: #000;
-    overflow: hidden;
-}
-
-.nav-element a :hover {
-    background-color: aqua;
-}
-.nav-element h5 {
-    text-align: center;
-    text-decoration: none;
-    line-height: 0%;
-    position: absolute;
-    top: 40px;
-}
-
-.nav-element svg {
-    padding-top: 12px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    background-color: blue;
-}
-/* .nav-icon {
-    height: 40px;
     display: flex;
     flex-direction: column;
-    justify-content: start;
-    padding-top: 12px;
-} */
+    align-items: center;
+    height: 64px;
+    width: 64px;
+    border-radius: 8px;
+}
+
+.header-center a:hover {
+    background-color: hsl(59, 100%, 40%);
+    transition: ease-in-out;
+    transition-duration: 500ms;
+}
+
+.header-center svg {
+    height: 24px;
+    margin-top: 12px;
+}
+
+.header-center h5 {
+    position: absolute;
+    top: 28px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.tag-sm {
+    z-index: 100;
+    position: relative;
+    left: 12px;
+    bottom: 36px;
+    max-height: 16px;
+    float: left;
+    font-size: 8px;
+    color: white;
+    border-radius: 4px;
+    background-color:#0fadff;
+    padding: 2px 4px;
+}
 
 /* Header Right */
 .header-right {
@@ -130,8 +123,8 @@ header {
 }
 
 .icon-btn {
-    width: 48px;
-    height: 48px;
+    width: 40px;
+    height: 40px;
     padding: 12px;
     background-color: white;
     border-radius: 50%;
@@ -140,7 +133,7 @@ header {
 .primary-btn {
     color: white;
     background: #000;
-    height: 40px;
+    height: 36px;
     padding: 0 12px;
     border: none;
     border-radius: 50px;
@@ -167,7 +160,7 @@ main {
     margin: 4px 6px 0 0;
     color: white;
     border-radius: 4px;
-    background-color: rgb(108, 108, 239);
+    background-color: #0fadff;
     padding: 4px;
 }
 
@@ -232,18 +225,35 @@ main {
 
 .footer-section {
     display: flex;
-    justify-content: space-around;
-    background-color: white;
+    padding: 0px 80px;
+    background-color: #f7f8f9;
+}
+
+.footer-section div {
+padding-right: 40px;
+min-width: 200px;
 }
 
 .footer-section div p {
     font-size: small;
-    line-height: 10px;
+    line-height: 8px;
+}
+.footer-section h5 {
+    line-height: 0px;
+}
+
+.footer-section select {
+background-color: white;
+border: 1px solid rgb(165, 165, 165);
+border-radius: 4px;
+padding: 4px;
+width: 200px;
+color: grey;
 }
 
 .footer-bottom-bar {
     background-color: #121314;
-    color: white;
+    color: #f7f8f9;
     padding-bottom: 64px;
     display: flex;
     justify-content: left;
@@ -251,7 +261,7 @@ main {
 
 .footer-bottom-bar a {
     text-decoration: none;
-    color: white;
+    color: #f7f8f9;
     font-size: 16px;
     padding: 16px 0px 16px 48px;
 }
