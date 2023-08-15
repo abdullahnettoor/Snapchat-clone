@@ -7,6 +7,11 @@ h1 {
     font-weight: 600;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 body{
     margin: 0;
     background-color: #FFFC00;
@@ -47,6 +52,10 @@ header {
     background-color: #FFFC00;
     text-decoration: grey;
     padding: 0px 12px 0 40px;
+}
+
+.header-left input:focus, input:active {
+    outline: none;
 }
 
 #logo {
@@ -143,13 +152,12 @@ main {
     padding-top: 128px;
     display: flex;
     align-items: center;
-    margin: 0px 120px;
-    height: 1000vh;
+    margin: 0px 20rem;
+    padding-bottom: 100px;
 }
 
 .section-left {
     width: 40%;
-    padding-bottom: 80px;
 }
 
 .section-left p {
@@ -189,11 +197,11 @@ main {
 
 .section-right {
     width: 60%;
-    height: 80vh;
+    height: fit-content;
 }
 
 .section-right img {
-    width: 50vw;
+    width: 40vw;
 }
 
 .banner {
@@ -238,9 +246,10 @@ main {
 min-width: 200px;
 }
 
-.footer-section div p {
+.footer-section div a {
+    display: block;
     font-size: small;
-    line-height: 8px;
+    line-height: 200%;
 }
 .footer-section h5 {
     line-height: 0px;
@@ -259,12 +268,12 @@ color: grey;
     background-color: #121314;
     color: #f7f8f9;
     padding-bottom: 64px;
+    padding-top: 8px;
     display: flex;
     justify-content: left;
 }
 
 .footer-bottom-bar a {
-    text-decoration: none;
     color: #f7f8f9;
     font-size: 16px;
     padding: 16px 0px 16px 48px;
